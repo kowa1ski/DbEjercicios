@@ -42,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="mostrar"
+            android:onClick="mostrar"
             tools:layout_editor_absoluteX="147dp"
             tools:layout_editor_absoluteY="289dp" />
     </LinearLayout>

@@ -22,6 +22,10 @@
         <activity
             android:name=".Agregar2Activity"
             android:label="@string/title_activity_agregar2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MostrarActivity"
+            android:label="@string/title_activity_mostrar"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
