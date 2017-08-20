@@ -1,5 +1,6 @@
 package com.kovalsk1.android.dbejercicios;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    // Creamos el método agregar que será llamado con un onClick desde
+    // el xml. También hemos creado la actividad adonde
+    // llevará este método mediante el intent.
+    public void agregar(View view){
+
+        Intent agregarActivity = new Intent(MainActivity.this, Agregar2Activity.class);
+        startActivity(agregarActivity);
+
     }
 
     @Override
