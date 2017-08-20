@@ -11,12 +11,20 @@ import android.database.sqlite.SQLiteOpenHelper;
 Creamos esto como sabemos con Alt+ intro
  */
 public class sqlite extends SQLiteOpenHelper {
+
+    // Primero Creamos una variable para crear la tabla
+    public String usuarios = "CREATE TABLE usuarios(idusuario INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, apellidos TEXT, "
+            + "edad INTEGER);";
+
     public sqlite(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+
+        // Y después creamos la tabla con la sentencia , db.execSQL() , .
+        db.execSQL(usuarios);
 
     }
 
