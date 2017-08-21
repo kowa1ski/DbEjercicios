@@ -12,7 +12,7 @@ public class usuarios {
     private String nombre, apellidos;
 
     // generamos el constructor automáticamente con clic derecho y generate constructor.
-    public usuarios(int usuario, int edad, String nombre, String apellidos) {
+    public usuarios(int usuario, String nombre, String apellidos, int edad) {
 
         /* Esto lo dejo comentado porque lo ha generado sólo pero no le veo sentido y
         de hecho, parece que es totalmente innecesario porque se van a tratar

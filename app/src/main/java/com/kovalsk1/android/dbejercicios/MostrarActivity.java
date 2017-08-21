@@ -49,7 +49,7 @@ public class MostrarActivity extends AppCompatActivity {
             Cursor c = db.rawQuery("SELECT * FROM usuarios", null);
             if (c.moveToFirst()) {
                 do{
-                    usuarios.add(new usuarios(c.getInt(0), c.getInt(1), c.getString(2), c.getString(3)));
+                    usuarios.add(new usuarios(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3)));
                 }while (c.moveToNext());
             }
         }
